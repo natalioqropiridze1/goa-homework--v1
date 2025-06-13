@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    </head>
+    <body>
+
+    <h1 style="text-align:center;">მომხმარებლის რეგისტრაცია</h1>
+
+    
+      
+        <label for="fullname">სახელი:</label>
+        <input type="text" id="fullname" name="fullname" required>
+
+       
+        <label for="email">ელფოსტა:</label>
+        <input type="email" id="email" name="email" required>
+
+       
+        <label for="age">ასაკი:</label>
+        <input type="number" id="age" name="age" min="0" required>
+
+      
+        <label for="city">ქალაქი:</label>
+        <input type="text" id="city" name="city" required>
+
+      
+        <label>სქესი:</label>
+        <div class="radio-group">
+            <label><input type="radio" name="gender" value="male" required> მამრობითი</label>
+            <label><input type="radio" name="gender" value="female" required> მდედრობითი</label>
+            <label><input type="radio" name="gender" value="other" required> სხვა</label>
+        </div>
+
+      
+        <label>ჰობები (მინიმუმ 1):</label>
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="hobbies" value="reading" required> კითხვა</label>
+            <label><input type="checkbox" name="hobbies" value="sports"> სპორტი</label>
+            <label><input type="checkbox" name="hobbies" value="music"> მუსიკა</label>
+        </div>
+
+      
+        <button type="submit">გაგზავნა</button>
+    </form>
+
+</body>
+</html>

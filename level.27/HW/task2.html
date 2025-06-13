@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title>Internal CSS წესები</title>
+    <style>
+       
+        h1, h2 {
+            color: navy; /* ტექსტის ფერი */
+            background-color: lightblue; /* ტექსტის ფონის ფერი */
+            text-align: center; /* ტეხსტის მდებარეობა */
+            font-family: Arial, sans-serif; 
+            padding: 10px; /* ტექსტის გაჭიმვა */
+            border-radius: 10px; /* მომრგვალებული კუთხეები */
+        }
+
+ 
+        div, p {
+            color: darkgreen; /* ტექსტის ფერი */
+            background-color: #e0ffe0; /* ტექსტის ფონის ფერი */
+            font-size: 16px; /* ფონტის ზომა */
+            line-height: 1.5; /* ტექსტს შორის დაშორება */
+            padding: 8px; /* სივრცის გაჭიმვა  */
+            border: 4px solid green; /* გარშემო ხაზები */
+        }
+    </style>
+</head>
+<body>
+    <h1>მთავარი სათაური</h1>
+    <h2>ქვესათაური</h2>
+
+    <div>
+        <p>ეს არის პირველი აბზაცი div ელემენტში.</p>
+        <p>ეს არის მეორე აბზაცი div ელემენტში.</p>
+        <p>ეს არის მესამე აბზაცი div ელემენტში.</p>
+    </div>
+</body>
+</html>
+<!--h1, h2 { ... } — ეს წესი გამოიყენება ორივე სათაურზე ერთდროულად ერთნაირი სტილისთვის
+div p { ... } — ამ წესით ყველა <p> ელემენტს რომელიც <div> ელემენტშია მოთავსებული აქვს ერთნაირი სტილი
