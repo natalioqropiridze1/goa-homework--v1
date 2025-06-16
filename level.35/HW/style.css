@@ -1,0 +1,29 @@
+#p1{
+text-align: right;
+color: beige;
+background-color: bisque;
+}
+
+#p2{
+text-decoration-style: dashed;
+text-decoration-line: overline;
+text-decoration-color: blue;
+}
+
+#p3{
+    text-transform: capitalize;
+    text-decoration: dotted;
+    text-align: right;
+    text-decoration-color: aqua;
+}
+
+#h1{
+    text-shadow: -20px -15px 4px gray;
+}
+
+#h2{
+text-decoration: underline;
+text-decoration-color: rgb(255, 0, 0);
+text-align: center;
+background-color: aqua;
+}

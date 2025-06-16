@@ -1,0 +1,21 @@
+#p2{
+    text-align: right;
+    color: rgb(31, 147, 210);
+    background-color: rgb(123, 208, 220);
+    text-decoration-style: dashed;
+    text-decoration-line: overline;  
+    text-transform: capitalize;
+    text-decoration-color: rgb(43, 103, 103);
+    text-shadow: -30px -25px 4px rgb(46, 88, 91);
+}
+
+#p3{
+    text-align: center;
+    color: rgb(177, 44, 189);
+    background-color: rgb(211, 151, 210);
+    text-decoration-style: dotted;
+    text-decoration-line: line-through;  
+    text-transform: capitalize;
+    text-decoration-color: rgb(91, 43, 103);
+    text-shadow: -30px -25px 4px rgb(112, 54, 104);
+}
