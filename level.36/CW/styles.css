@@ -1,0 +1,19 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+#para1 {
+    font-family: 'Pacifico';
+    font-size: 24px;
+}
+
+
+.para2 {
+    font-family: 'Lobster';
+    font-size: 24px;
+}
+
+#para3 {
+    font-family: 'Georgia';
+    font-size: 24px;
+}

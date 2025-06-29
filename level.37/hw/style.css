@@ -1,0 +1,21 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+
+
+#oswald {
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+}
+
+#comfortaa {
+  font-family: 'Comfortaa', cursive;
+  font-size: 24px;
+}
+
+#inconsolata {
+  font-family: 'Inconsolata', sans-serif ;
+  font-size: 24px
+}

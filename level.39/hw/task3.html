@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+<meta charset="UTF-8">
+<title>Students Table</title>
+<style>
+table {
+  border: 2px solid black;
+  margin-bottom: 20px;
+}
+th, td {
+  border: 1px solid gray;
+  padding: 5px 10px;
+}
+
+
+table.collapse {
+  border-collapse: collapse;
+  border: 2px solid black;
+}
+table.collapse th, table.collapse td {
+  border: 1px solid gray;
+  padding: 5px 10px;
+}
+
+</style>
+</head>
+<body>
+
+<table>
+  <thead>
+    <tr><th>სახელი</th><th>საგანი</th><th>ქულა</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>ნინო</td><td>მათემატიკა</td><td>95</td></tr>
+    <tr><td>გიორგი</td><td>ფიზიკა</td><td>88</td></tr>
+    <tr><td>თამარი</td><td>ბიოლოგია</td><td>92</td></tr>
+  </tbody>
+</table>
+
+<table class="collapse">
+  <thead>
+    <tr><th>სახელი</th><th>საგანი</th><th>ქულა</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>ნინო</td><td>მათემატიკა</td><td>95</td></tr>
+    <tr><td>გიორგი</td><td>ფიზიკა</td><td>88</td></tr>
+    <tr><td>თამარი</td><td>ბიოლოგია</td><td>92</td></tr>
+  </tbody>
+</table>
+
+
+</body>
+</html>

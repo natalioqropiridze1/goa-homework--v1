@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>სტილიზებული ცხრილი</title>
+  <style>
+    table {
+      margin-bottom: 30px;
+    }
+    .table1, .table1 th, .table1 td {
+      border: 2px solid rgb(144, 163, 56); 
+    }
+    .table1 th, .table1 td {
+      padding: 10px;
+      text-align: center;
+    }
+    .table1 td:nth-child(2) {
+      background-color: #f0f8ff; }
+
+    .table2, .table2 th, .table2 td {
+      border: 2px solid rgb(196, 28, 28);
+      border-collapse: collapse; 
+    }
+    .table2 th, .table2 td {
+      padding: 10px;
+      text-align: center;
+    }
+    .table2 td:nth-child(2) {
+      background-color: #ffe4e1; 
+    }
+  </style>
+</head>
+<body>
+  <table class="table1">
+    <tr>
+      <th>სახელი</th>
+      <th>ასაკი</th>
+      <th>ქვეყანა</th>
+    </tr>
+    <tr>
+      <td>bob</td>
+      <td>22</td>
+      <td>georgia</td>
+    </tr>
+    <tr>
+      <td>luka</td>
+      <td>25</td>
+      <td>france</td>
+    </tr>
+    <tr>
+      <td>merry</td>
+      <td>19</td>
+      <td>germany</td>
+    </tr>
+  </table>
+
+  <table class="table2">
+    <tr>
+      <th>სახელი</th>
+      <th>ასაკი</th>
+      <th>ქვეყანა</th>
+    </tr>
+    <tr>
+      <td>ანა</td>
+      <td>22</td>
+      <td>საქართველო</td>
+    </tr>
+    <tr>
+      <td>ლუკა</td>
+      <td>25</td>
+      <td>საფრანგეთი</td>
+    </tr>
+    <tr>
+      <td>მარი</td>
+      <td>19</td>
+      <td>გერმანია</td>
+    </tr>
+  </table>
+
+</body>
+</html>
