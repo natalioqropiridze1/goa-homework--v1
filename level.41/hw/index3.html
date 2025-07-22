@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> ფორმა</title>
+  <style>
+    form {
+      background-color: rgb(237, 197, 197);
+      padding: 30px;
+      width: 300px;
+      border-radius: 10px;
+      font-family: sans-serif;
+      margin: 100px;
+    }
+
+    input[type="text"], textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid blue;
+      text-transform: capitalize;
+    }
+
+    input[type="text"]:hover {
+      background-color: #00ff66; 
+    }
+
+    input[type="submit"] {
+      padding: 10px 20px;
+      background-color: blue;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: rgb(0, 127, 139);
+    }
+  </style>
+</head>
+<body>
+
+  <form>
+    <label>სახელი:</label><br>
+    <input type="text" id="name" name="name"><br>
+
+    <label >ელფოსტა:</label><br>
+    <input type="text" id="email" name="email"><br>
+
+    <label >შეტყობინება:</label><br>
+    <textarea id="message" name="message" ></textarea><br>
+
+    <input type="submit" value="გაგზავნა">
+  </form>
+
+</body>
+</html>
