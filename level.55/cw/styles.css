@@ -1,0 +1,23 @@
+.parent {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 2px solid #333;
+  }
+  
+  .child {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: #ff6347;
+
+    animation: around 4s linear 0s infinite forwards;
+
+@keyframes around {
+        0%   { top: 0; left: 0; }
+        25%  { top: 0; left: 160px; }
+        50%  { top: 160px; left: 160px; }
+        75%  { top: 160px; left: 0; }
+        100% { top: 0; left: 0; }
+      }
+  }
