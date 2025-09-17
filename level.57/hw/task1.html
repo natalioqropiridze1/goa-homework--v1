@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Layout Example 2</title>
+  <style>
+    .container {
+      display: grid;
+      grid-template-areas: 
+        "header header header"
+        "sidebar content1 content1"
+        "sidebar content2 content3"
+        "footer footer footer";
+      grid-template-columns: 200px 1fr  1fr;
+      gap: 10px;
+    }
+    header  
+     { grid-area: header;
+       background: purple; 
+       color: white; 
+       padding: 20px; 
+       text-align: center;
+     }
+
+    .sidebar {
+         grid-area: sidebar; 
+         background: teal; 
+         color: white; 
+         padding: 20px; }
+
+    .content1{ 
+        grid-area: content1; 
+        background: dodgerblue; 
+        color: white; 
+        padding: 20px; }
+
+    .content2{ 
+        grid-area: content2; 
+        background: cornflowerblue; 
+        color: white;
+         padding: 20px; }
+
+    .content3{ 
+        grid-area: content3; 
+        background: royalblue; 
+        color: white; 
+        padding: 20px; }
+
+    footer   {
+         grid-area: footer;
+          background: purple;
+           color: white;
+            padding: 20px; 
+            text-align: center; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>Header</header>
+    <div class="sidebar">Sidebar</div>
+    <div class="content1">Content 1</div>
+    <div class="content2">Content 2</div>
+    <div class="content3">Content 3</div>
+    <footer>Footer</footer>
+  </div>
+</body>
+</html>
