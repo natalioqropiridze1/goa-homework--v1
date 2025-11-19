@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Student(name, age, grade, active) {
+    this.name = name;
+    this.age = age;
+    this.grade = grade;
+    this.active = active;
+
+    this.promote = function () {
+        if (this.grade < 12) {
+            this.grade++;
+            console.log(`${this.name} went ${this.grade} grade`);
+        } else {
+            console.log(`${this.name} graduated`);
+        }
+    };
+}
+
+const student1 = new Student("mery", 15, 9, true);
+const student2 = new Student("david", 17, 12, true);
+const student3 = new Student("james", 14, 8, false);
+
+student1.promote();
+student2.promote();
+student3.promote();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

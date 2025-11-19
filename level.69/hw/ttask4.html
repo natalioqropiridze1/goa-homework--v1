@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+function countDownFrom20() {
+    let output = "";
+    for (let i = 20; i >= 0; i--) {
+        output += i + "\n";
+    }
+    document.getElementById("countdownResult").innerText = output;}
+    </script>
+</head>
+<body>
+     <button onclick="countDownFrom20()">20-0/button>
+    <pre id="countdownResult"></pre>
+</body>
+</html>

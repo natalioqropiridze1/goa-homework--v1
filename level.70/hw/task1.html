@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const numbers = [];
+
+for (let i = 0; i <= 10; i++) {
+    numbers.push({
+        value: i,
+        type: i % 2 === 0 ? "even" : "odd"
+    });
+}
+
+const list = document.getElementById("numberList");
+
+numbers.forEach(item => {
+    const li = document.createElement("li");
+    li.textContent = `num: ${item.value}, type: ${item.type}`;
+    list.appendChild(li);
+});
+    </script>
+</head>
+<body>
+    <h1>0 to 10</h1>
+    <ul id="numberList"></ul>
+</body>
+</html>

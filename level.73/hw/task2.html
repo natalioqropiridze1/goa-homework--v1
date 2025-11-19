@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const intervalId = setInterval(() => {
+            const now = new Date();
+            console.log("time and date now", now);
+        }, 1000);
+        setTimeout(() => {
+            clearInterval(intervalId);
+            console.log("stoppped");
+        }, 10000);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

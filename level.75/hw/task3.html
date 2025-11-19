@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const box = document.getElementById('smallBox');
+const container = document.getElementById('container');
+const containerSize = 400;
+const boxSize = 50;
+let x = 0;
+let y = 0;
+let direction = 'right';
+setInterval(moveBox, 10);
+function moveBox() {
+    
+    if (direction === 'right') {
+        x += 1;
+        if (x >= containerSize - boxSize) {
+            direction = 'down';
+        }
+    } else if (direction === 'down') {
+        y += 1;
+        if (y >= containerSize - boxSize) {
+            direction = 'left';
+        }
+    } else if (direction === 'left') {
+        x -= 1;
+        if (x <= 0) {
+            direction = 'up';
+        }
+    } else if (direction === 'up') {
+        y -= 1;
+        if (y <= 0) {
+            direction = 'right';
+        }
+    }}
+    </script>
+</head>
+<body>
+    <div id="container">
+        <div id="smallBox"></div>
+    </div>
+</body>
+</html>

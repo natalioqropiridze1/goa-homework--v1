@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const button = document.getElementById('addNumberBtn');
+button.addEventListener('click', function () {
+    const randomNumber = Math.floor(Math.random() * 1001);
+    const p = document.createElement('p');
+    p.textContent = `numm ${randomNumber}`;
+    document.body.appendChild(p);
+});
+    </script>
+</head>
+<body>
+    <button id="addNumberBtn"></button>
+</body>
+</html>

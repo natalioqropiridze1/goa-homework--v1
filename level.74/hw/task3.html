@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const secondItem = document.getElementById("item2");
+console.log("getElementById:", secondItem.textContent);
+
+const allLi = document.getElementsByTagName("li");
+console.log("getElementsByTagName:", allLi);
+
+const listItems = document.getElementsByClassName("list-item");
+console.log("getElementsByClassName:", listItems);
+const item3 = document.getElementById("item3");
+console.log("previousElementSibling of item3:", item3.previousElementSibling.textContent);ე
+const item2 = document.getElementById("item2");
+console.log("nextElementSibling of item2:", item2.nextElementSibling.textContent);
+
+const ul = document.getElementById("myList");
+console.log("firstChild of ul:", ul.firstChild); 
+console.log("lastChild of ul:", ul.lastChild);
+console.log("childNodes of ul:", ul.childNodes);
+console.log("children of ul:", ul.children);
+
+secondItem.style.color = "blue";
+item3.style.fontWeight = "bold";
+    </script>
+</head>
+<body>
+    <h2>DOM </h2>
+    <ul id="myList">
+        <li id="item1" class="list-item">პირველი ელემენტი</li>
+        <li id="item2" class="list-item">მეორე ელემენტი</li>
+        <li id="item3" class="list-item">მესამე ელემენტი</li>
+        <li id="item4" class="list-item">მეოთხე ელემენტი</li>
+    </ul>
+</body>
+</html>

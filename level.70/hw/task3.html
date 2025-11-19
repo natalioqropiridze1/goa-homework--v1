@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Book(title, author, year, available) {
+    this.title = title;
+    this.author = author;
+    this.year = year;
+    this.available = available;
+
+    this.toggleAvailability = function () {
+        this.available = !this.available;
+        console.log(`"${this.title}" : ${this.available ? "✓ ხელმისაწვდომია" : "მიუწვდომელია"}`);
+    };
+}
+
+const book1 = new Book("shushaniki", "iakob uxucesi", 1200, true);
+const book2 = new Book("natvris xe", "giorgi leonidze", 1910, false);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

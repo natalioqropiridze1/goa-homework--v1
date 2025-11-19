@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Employee(name, position, salary, active) {
+    this.name = name;
+    this.position = position;
+    this.salary = salary;
+    this.active = active;
+    this.raiseSalary = function () {
+        const increase = this.salary * 0.10;
+        this.salary += increase;
+        console.log(`${this.name}'s income got 10% up' ${this.salary.toFixed(2)} ₾`);
+    };
+}
+
+const employees = [
+    new Employee("george", "developer", 3000, true),
+    new Employee("luke", "economist", 2500, true),
+    new Employee("james", "teacher", 2800, false)
+];
+
+for (let i = 0; i < employees.length; i++) {
+    employees[i].raiseSalary();
+}
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

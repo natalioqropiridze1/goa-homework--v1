@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function promptUntilStop() {
+    let input = "";
+    while (input.toLowerCase() !== "stop") {
+        input = prompt("გთხოვთ შეიყვანოთ ტექსტი დაწერეთ 'stop')");
+        if (input === null) {
+            alert("");
+            break;
+        }
+    }
+    alert("ციკლი შეჩერდა სიტყვით 'stop'");
+}
+    </script>
+</head>
+<body>
+    <button onclick="promptUntilStop()">დაიწყე ტექსტის შეყვანა</button>
+</body>
+</html>

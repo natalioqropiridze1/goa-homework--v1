@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>Minimal Image Slider</title>
+
+
+  <script>
+ const images = [
+    "http://www.sololearn.com/uploads/slider/1.jpg", 
+    "http://www.sololearn.com/uploads/slider/2.jpg", 
+    "http://www.sololearn.com/uploads/slider/3.jpg"
+]; 
+
+    let i = 0;
+    const slider = document.getElementById("slider");
+
+    document.getElementById("next").onclick = () => {
+      i = (i + 1) % images.length;
+      slider.src = images[i];
+    };
+
+    document.getElementById("prev").onclick = () => {
+      i = (i - 1 + images.length) % images.length;
+      slider.src = images[i];
+    };
+  </script>
+
+</body>
+</html>

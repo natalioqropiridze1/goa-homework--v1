@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+const noteInput = document.getElementById("noteInput");
+const addBtn = document.getElementById("addBtn");
+const notesList = document.getElementById("notesList");
+addBtn.addEventListener("click", () => {
+    const noteText = noteInput.value.trim();
+
+    if (noteText === "") {
+        alert("გთხოვ შეიყვანე ტექსტი!");
+        return;
+    }
+    const li = document.createElement("li");
+    li.textContent = noteText;
+    const deleteBtn = document.createElement("button");
+    deleteBtn.textContent = "წაშლა";
+    deleteBtn.classList.add("delete-btn");
+    deleteBtn.addEventListener("click", () => {
+        li.remove();
+    });
+    li.appendChild(deleteBtn);
+    notesList.appendChild(li);
+    noteInput.value = "";
+});
+    </script>
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="noteInput" placeholder="insert text">
+        <button id="addBtn">add</button>>
+        <ul id="notesList"></ul>
+    </div>
+</body>
+</html>

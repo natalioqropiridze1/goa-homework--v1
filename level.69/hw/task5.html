@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function printEvenNumbers() {
+    let output = "";
+    for (let i = 0; i <= 10; i += 2) {
+        output += i + "\n";
+    }
+    document.getElementById("evenWithoutIf").innerText = output;}
+    </script>
+</head>
+<body>
+    <button onclick="printEvenNumbers()">დაბეჭდე ლუწი რიცხვები (0-10)</button>
+    <pre id="evenWithoutIf"></pre>
+  
+</body>
+</html>
